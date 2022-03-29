@@ -1,0 +1,21 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        int n, temp, i=1;
+        Scanner sc = new Scanner (System.in);
+        n = sc.nextInt();
+        for (i=1;i<=n;i++){
+            int sum=0;
+        for (int j=i ; j>0 ;j/=10){
+            temp = j%10;
+            sum = sum + temp*temp*temp;             
+        
+        } 
+        if(sum==i){
+            System.out.println(i);  
+            } 
+    }
+    }
+}
